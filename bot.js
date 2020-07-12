@@ -11,7 +11,7 @@ client.on('message', message => {
         message.reply('pong');
     }
     else if (message.content === 'ping') {
-        message.reply('long');
+        message.reply('pong');
     }
 });
 
