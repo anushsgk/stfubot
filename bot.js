@@ -6,9 +6,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'lol') {
-        message.reply('pong');
+    if (message.content === '${prefix}ping') {
+        // send back "Pong." to the channel the message was sent in
+        message.channel.send('Pong.');
+    } else if (message.author.id === '365530592017776650') {
+        message.channel.send('u have smol pp');
     }
+}
 });
 
 // THIS  MUST  BE  THIS  WAY
